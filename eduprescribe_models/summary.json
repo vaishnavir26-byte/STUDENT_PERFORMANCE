@@ -1,0 +1,21 @@
+{
+  "project": "EduPrescribe AI - Student Wellness & Prescriptive Uplift",
+  "cohort_size": 395,
+  "quadrant_counts": {
+    "Q1: Thriving Achievers": 204,
+    "Q4: Academic Disengagement / Coasting": 97,
+    "Q2: High-Performing Burnout Risk": 61,
+    "Q3: Dual Crisis / High Vulnerability": 33
+  },
+  "burnout_tier_counts": {
+    "Moderate Stress": 167,
+    "Low Burnout": 134,
+    "Elevated Burnout Risk": 69,
+    "Acute Exhaustion": 25
+  },
+  "mean_bvi": 31.26146835443038,
+  "median_bvi": 30.25,
+  "at_risk_students_count": 130,
+  "burnout_vulnerable_count": 94,
+  "hidden_burnout_achievers_count": 61
+}
