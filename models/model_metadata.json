@@ -1,0 +1,128 @@
+{
+  "dataset": "UCI Student Performance (Mathematics, student-mat.csv)",
+  "split_seed": 42,
+  "train_rows": 316,
+  "test_rows": 79,
+  "linear_regression_g3": {
+    "features": [
+      "G1",
+      "G2",
+      "studytime",
+      "absences",
+      "failures"
+    ],
+    "intercept": -1.5617625587134594,
+    "coefficients": {
+      "G1": 0.17702978488439483,
+      "G2": 0.9586429810703727,
+      "studytime": -0.2015238429484046,
+      "absences": 0.043361284510320154,
+      "failures": -0.15152110974103328
+    },
+    "p_values": {
+      "Intercept": 0.001706468709713901,
+      "G1": 0.0046726682195579045,
+      "G2": 1.5807710335443907e-47,
+      "studytime": 0.13042640896777655,
+      "absences": 0.0028456897418748313,
+      "failures": 0.33654977228091587
+    },
+    "training": {
+      "rmse": 1.8920969502332254,
+      "mae": 1.1398708299108442,
+      "r2": 0.8285229859321409
+    },
+    "cross_val_5fold": {
+      "rmse_mean": 1.8928871686287665,
+      "rmse_std": 0.33943252512417244,
+      "r2_mean": 0.8216274219215602
+    },
+    "held_out_test": {
+      "rmse": 1.920075126765562,
+      "mae": 1.2728701640163902,
+      "r2": 0.8258452959428315
+    }
+  },
+  "logistic_regression_at_risk": {
+    "features": [
+      "G1",
+      "G2",
+      "studytime",
+      "absences",
+      "failures",
+      "schoolsup_yes"
+    ],
+    "intercept": 18.221143412130793,
+    "coefficients": {
+      "G1": -0.2912935419217234,
+      "G2": -1.855306598912102,
+      "studytime": 0.6003504805659681,
+      "absences": 0.050106535763883284,
+      "failures": -0.21063990137432995,
+      "schoolsup_yes": -0.5319796519105964
+    },
+    "odds_ratios": {
+      "G1": 0.7472962830318355,
+      "G2": 0.15640498172569856,
+      "studytime": 1.8227575295434701,
+      "absences": 1.0513831003114313,
+      "failures": 0.8100657179182807,
+      "schoolsup_yes": 0.5874408893426466
+    },
+    "optimal_threshold_youden": 0.3314677338618812,
+    "held_out_standard_050": {
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 49,
+        "fp": 4,
+        "fn": 3,
+        "tp": 23
+      },
+      "accuracy": 0.9113924050632911,
+      "sensitivity": 0.8846153846153846,
+      "specificity": 0.9245283018867925,
+      "precision": 0.8518518518518519,
+      "npv": 0.9423076923076923,
+      "f1_score": 0.8679245283018868,
+      "roc_auc": 0.9796806966618288,
+      "brier_score": 0.057739472385748204
+    },
+    "held_out_optimal_youden": {
+      "threshold": 0.3314677338618812,
+      "confusion_matrix": {
+        "tn": 47,
+        "fp": 6,
+        "fn": 3,
+        "tp": 23
+      },
+      "accuracy": 0.8860759493670886,
+      "sensitivity": 0.8846153846153846,
+      "specificity": 0.8867924528301887,
+      "precision": 0.7931034482758621,
+      "npv": 0.94,
+      "f1_score": 0.8363636363636363,
+      "roc_auc": 0.9796806966618288,
+      "brier_score": 0.057739472385748204
+    }
+  },
+  "early_warning_model": {
+    "features": [
+      "studytime",
+      "failures",
+      "absences",
+      "Medu",
+      "Fedu",
+      "goout",
+      "Dalc",
+      "Walc",
+      "age",
+      "schoolsup_yes",
+      "famsup_yes",
+      "higher_yes"
+    ],
+    "test_roc_auc": 0.7960812772133526,
+    "test_accuracy": 0.7215189873417721,
+    "test_sensitivity": 0.6923076923076923,
+    "test_specificity": 0.7358490566037735
+  }
+}

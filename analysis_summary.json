@@ -1,0 +1,130 @@
+{
+  "dataset": "UCI Student Performance (student-mat.csv)",
+  "descriptive_statistics": {
+    "full": {
+      "N": 395,
+      "Mean": 10.415189873417722,
+      "SD": 4.5814426109978434,
+      "Median": 11.0,
+      "IQR": 6.0,
+      "Min": 0.0,
+      "Max": 20.0,
+      "Skewness": -0.7298871128420806,
+      "Kurtosis": 0.38318077210345125
+    },
+    "passing": {
+      "N": 265,
+      "Mean": 12.883018867924529,
+      "SD": 2.4980094991764914,
+      "Median": 12.0,
+      "IQR": 4.0,
+      "Min": 10.0,
+      "Max": 20.0
+    },
+    "at_risk": {
+      "N": 130,
+      "Mean": 5.384615384615385,
+      "SD": 3.6501770486625964,
+      "Median": 7.0,
+      "IQR": 8.0,
+      "Min": 0.0,
+      "Max": 9.0
+    }
+  },
+  "hypothesis_tests": {
+    "correlation": {
+      "pearson_r": 0.9048679892693009,
+      "pearson_p": 7.625719154047869e-148,
+      "ci_95": [
+        0.8852340669054064,
+        0.9212832302213061
+      ],
+      "spearman_rho": 0.9571253283356645,
+      "spearman_p": 1.4253415127948089e-213
+    },
+    "studytime_test": {
+      "f_stat": 1.7278351054436039,
+      "p_anova": 0.16072280968366387,
+      "eta_squared": 0.01308359698668442,
+      "shapiro_w": 0.9356288249844885,
+      "shapiro_p": 4.893332310846153e-12,
+      "levene_stat": 1.291279452281806,
+      "levene_p": 0.2770186288251717,
+      "kruskal_h": 7.578856181381842,
+      "kruskal_p": 0.0555665444343657
+    },
+    "contingency": {
+      "chi2_yates": 3.3306942606505596,
+      "p_yates": 0.06799816590050785,
+      "chi2_raw": 3.9389661043814703,
+      "p_raw": 0.0471797655628925,
+      "fisher_odds_ratio": 1.819425901201602,
+      "fisher_p": 0.05548566265905293
+    }
+  },
+  "linear_regression": {
+    "rmse_train": 1.8920969502332254,
+    "mae_train": 1.1398708299108442,
+    "r2_train": 0.8285229859321409,
+    "rmse_test": 1.920075126765562,
+    "mae_test": 1.2728701640163902,
+    "r2_test": 0.8258452959428315,
+    "vifs": {
+      "G1": 3.741213282371191,
+      "G2": 3.7616084691634892,
+      "studytime": 1.050127288694424,
+      "absences": 1.014460229220078,
+      "failures": 1.2118091780138716
+    }
+  },
+  "logistic_regression": {
+    "accuracy": 0.9113924050632911,
+    "sensitivity": 0.8846153846153846,
+    "specificity": 0.9245283018867925,
+    "precision": 0.8518518518518519,
+    "roc_auc": 0.9796806966618288,
+    "brier_score": 0.057739472385748204,
+    "optimal_cutoff": 0.3314677338618812
+  },
+  "extended_audits": {
+    "fairness": {
+      "sex_M": {
+        "N": 36,
+        "accuracy": 0.8611111111111112,
+        "sensitivity": 0.7777777777777778,
+        "specificity": 0.8888888888888888
+      },
+      "sex_F": {
+        "N": 43,
+        "accuracy": 0.9534883720930233,
+        "sensitivity": 0.9411764705882353,
+        "specificity": 0.9615384615384616
+      },
+      "school_MS": {
+        "N": 10,
+        "accuracy": 1.0,
+        "sensitivity": 1.0,
+        "specificity": 1.0
+      },
+      "school_GP": {
+        "N": 69,
+        "accuracy": 0.8985507246376812,
+        "sensitivity": 0.8695652173913043,
+        "specificity": 0.9130434782608695
+      },
+      "address_R": {
+        "N": 20,
+        "accuracy": 0.95,
+        "sensitivity": 1.0,
+        "specificity": 0.9230769230769231
+      },
+      "address_U": {
+        "N": 59,
+        "accuracy": 0.8983050847457628,
+        "sensitivity": 0.8421052631578947,
+        "specificity": 0.925
+      }
+    },
+    "hurdle_completer_rmse": 0.7746668335832378
+  }
+}
