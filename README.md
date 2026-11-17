@@ -6,6 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRD Compliance](https://img.shields.io/badge/PRD%20v1.0-100%25%20Verified-success.svg)](STUDENT_PERFORMANCE_REPORT.md)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vaishnavir26-byte/STUDENT_PERFORMANCE)
 
 An empirical, reproducible statistical analysis and machine learning early-warning risk classification framework for secondary mathematics students based on the benchmark dataset from the **UCI Machine Learning Repository** (*Paulo Cortez & Alice Silva, 2008*).
 
@@ -15,7 +16,10 @@ Combines exploratory data analysis, parametric & non-parametric hypothesis testi
 
 ## 🚀 Live Demo & Interactive Dashboard
 
-- **Live Web Dashboard:** [https://vaishnavir26-byte.github.io/STUDENT_PERFORMANCE/](https://vaishnavir26-byte.github.io/STUDENT_PERFORMANCE/)
+- **One-Click Netlify Deploy:** [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vaishnavir26-byte/STUDENT_PERFORMANCE)
+- **Netlify Site URL:** [https://student-performance-analytics-pzz8.netlify.app](https://student-performance-analytics-pzz8.netlify.app)
+- **Netlify Project Console:** [https://app.netlify.com/projects/student-performance-analytics-pzz8](https://app.netlify.com/projects/student-performance-analytics-pzz8)
+- **GitHub Pages:** [https://vaishnavir26-byte.github.io/STUDENT_PERFORMANCE/](https://vaishnavir26-byte.github.io/STUDENT_PERFORMANCE/)
 - **Alternative Cloud Deploy (Netlify):** [https://supplyxi.netlify.app/student_dashboard.html](https://supplyxi.netlify.app/student_dashboard.html)
 - **Local Dashboard:** Open `index.html` or `student_dashboard.html` in any modern web browser.
 
